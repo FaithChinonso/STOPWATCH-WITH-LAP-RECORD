@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jura';
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: rgb(85, 161, 161);
+    padding: 2rem;
+    border-radius: 5px;
+    transition: transform .5s;
+    transition-delay: .5s;
+    
+}
+.container:hover {
+    transform: scale(0.95);
+} 
+#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+button {
+    padding: .8rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: none;
+    transition: transform .3s;
+}
+button:hover {
+    transform: scale(.95);
+    background-color: darkcyan;
+}
+button.active {
+    background-color: darkcyan;
+    color: white;
+    font-size: 1.5rem;
+}
+table {
+    width: 100%;
+}
+table, table thead th, table tbody tr td {
+    border: 1px solid rgb(6, 6, 53);
+    border-collapse: collapse;
+    padding: 1rem;
+   
+}
